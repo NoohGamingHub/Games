@@ -3,196 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nooh's Gaming Hub</title>
-   <link rel="stylesheet" href="styles.css">  
-       
+    <title>Public Message Board</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<div id="particles-js"></div>
-
-    <button id="fab" class="fab" onclick="changeSection('games')">🎮</button>
-
-    <!-- Modal for Rating and Feedback -->
-<!-- Modal for Rating and Feedback -->
-<!-- Feedback Modal -->
-<div id="loading-screen">
-    <div class="progress-container">
-        <div class="progress-bar"></div>
-    </div>
-    <p>Loading, please wait<span id="loading-dots"></span></p>
-</div>
-
-
-<div id="feedback-modal" class="modal">
-    <div class="modal-content">
-        <h2>We value your feedback!</h2>
-        <p>Rate our site and give feedback of at least 3 words to continue playing.</p>
-        
-        <!-- 5-Star Rating -->
-        <!-- 5-Star Rating -->
-<div id="star-rating">
-    <span class="star" data-value="1">&#9734;</span>
-    <span class="star" data-value="2">&#9734;</span>
-    <span class="star" data-value="3">&#9734;</span>
-    <span class="star" data-value="4">&#9734;</span>
-    <span class="star" data-value="5">&#9734;</span>
-</div>
-<div id="rating-display" style="text-align: center; margin-top: 10px; font-weight: bold; color: #45A29E;">
-    <!-- Rating message will be displayed here -->
-     CHOOSE HOW MUCH STARS YOU LIKE THIS WEBSITE, 5 for LOVE, and 1 for HATEED
-</div>
-
-
-        <textarea id="feedback-text" placeholder="Enter your feedback here..."></textarea>
-        <button id="submit-feedback">Submit</button>
-        <button id="close-modal">Close</button>
-    </div>
-</div>
-
-
-    <div id="signin-modal" class="modal">
-        <div class="modal-content">
-            <h2>Sign In</h2>
-            <p>Please sign in to access the games.</p>
-            <input type="email" id="email-input" placeholder="Enter your email" required />
-            <button onclick="signIn()">Sign In</button>
-        </div>
-    </div>
-   <header>
-        <h1>Nooh's Gaming Hub</h1>
-        <nav>
-            <button class="nav-button" onclick="changeSection('home')">Home</button>
-            <button class="nav-button" onclick="changeSection('games')">Games</button>
-            <button class="nav-button" onclick="changeSection('leaderboard')">Leaderboard</button>
-            <button class="nav-button" onclick="changeSection('admin')">AD</button>
-            <button class="nav-button" onclick="window.location.href='https://noohgoat.github.io/Forum/';">Forum</button> 
-            <button class="nav-button" onclick="changeSection('achievements')">Achievements</button>
-            <button class="" onclick="logout()">Logout</button>
-       
-            
-        </nav>
+    <header>
+        <h1>Public Message Board</h1>
     </header>
     <main>
-        <section id="achievements-section" class="section">
-            <h2>Your Achievements</h2>
-            <ul id="achievements-list">
-                <!-- Achievements will be dynamically added here -->
-            </ul>
-        </section>    
-        
-        <section id="home-section" class="section active">
-            <h2>Welcome to the Gaming Hub</h2>
-            <p>Discover new games, climb the leaderboards, and customize your profile! Please watch the video below.</p>
-            <p> Please visit the Forum to get updated daily on <strong>GAMES</strong> and changes. Below is my intro, and Welcome to you. </p>
-            <br>
-            <button class="game-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-            <br>
-            <img src="GamingImg.jpg" alt="YOUR COMPUTER IS NOT SHOWING IMAGE">
-           
-
-        </section>
-        <section id="admin-section" class="section">
-            <div class="admin">
-                <h2>Admin Panel</h2>
-                <input type="text" id="admin-code-input" placeholder="Enter admin code" />
-                <button onclick="checkAdminCode()">Submit</button>
-                <div id="email-list" style="display:none;">
-                    <h3>Stored Emails:</h3>
-                    <ul id="emails"></ul>
-                </div>
-            </div>
-        </section>
-        <section id="games-section" class="section">
-            <h2>Games</h2>
-            <p>Select a game to start playing. Use the search bar to quickly find your favorites!</p>
-            <div class="search-bar">
-                <input type="text" id="game-search" placeholder="Search for a game...">
-                <button id="search-button"></button>
-            </div>
-            <div id="game-list">
-                <div id="mygame-list">
-                    <h3>These are my games, written in Java.</h3>
-                    <br>
-                    <br>
-                    <center>
-                    <button class="game-button" data-game="Geometry Dash" onclick="window.location.href='https://noohgaminghub.github.io/N/Geometry Dash v1.5.html';">Geometry Dash</button> 
-                    <button class="game-button" data-game="Slither.io" onclick="window.location.href='https://noohgaminghub.github.io/N/';">Slither.io</button> 
-                    <button class="game-button" data-game="Paper Minecraft" onclick="window.location.href='https://noohgaminghub.github.io/N/Paper Minecraft .html';">Paper Minecraft</button> 
-                    <button class="game-button" data-game="Tower Defense" onclick="window.location.href='noohgaminghub.github.io/N/TowerDefense2.html';">Tower Defense</button> 
-                    <button class="game-button" data-game="Chess" onclick="window.location.href='https://noohgaminghub.github.io/N/Chess .html';">Chess</button> 
-                    <button class="game-button" data-game="Subway Surfers" onclick="window.location.href='https://noohgaminghub.github.io/N/Subway Surfers.html';">Subway Surfers</button> 
-                    <button class="game-button" data-game="Mario" onclick="window.location.href='https://noohgaminghub.github.io/N/Mario.html';">Mario</button> 
-                    <button class="game-button" data-game="Dinosaur" onclick="window.location.href='https://noohgaminghub.github.io/N/Dinosaur Game.html';">Dinosaur</button> 
-                    <button class="game-button" data-game="Snake" onclick="window.location.href='https://noohgaminghub.github.io/N/Google Snake.html';">Snake</button> 
-                    <button class="game-button" data-game="Block Blast" onclick="window.location.href='https://noohgaminghub.github.io/N/';">Block Blast</button> 
-                    <button class="game-button" data-game="Apple" onclick="window.location.href='https://noohgaminghub.github.io/N/Appel v1.4.html';">Apple</button> 
-                    <button class="game-button" data-game="Paper.io" onclick="window.location.href='https://noohgaminghub.github.io/N/';">Paper.io</button> 
-                    <button class="game-button" data-game="Platformer" onclick="window.location.href='https://noohgaminghub.github.io/N/Massive Multiplayer Platformer.html';">Massive Multiplayer Platformer</button>
-                    <button class="game-button" data-game="Grab" onclick="window.location.href='https://noohgaminghub.github.io/N/✋Hamster Grab (1).html';">Hamster Grab</button>
-                    <button class="game-button" data-game="Platformer" onclick="window.location.href='https://noohgaminghub.github.io/N/WORLDS HARDEST GAME.html';">WORLDS HARDEST HARDEST PLATFORMER IN THE WORLD</button>
-                    <button class="game-button" data-game="Tower" onclick="window.location.href='https://noohgaminghub.github.io/N/Tower (1).html';">Tower</button>
-                    
-                </center>
-                    
-                </div>
-                <div id="othergame-list">
-                    <h3>These are games, i didn't make and found on the internet.</h3>
-                    <br>
-                    <br>
-                    <button class="game-button" data-game="1v1" onclick="window.location.href='https://parshwa282011.github.io/1v1-lol-2/';">1v1.lol</button> 
-                    </div>
-                </div>
-        </section>
-        <section id="leaderboard-section" class="section">
-            <h2>Leaderboard</h2>
-            <p>See who’s on top of the rankings!</p>
-            <div id="points-section">
-                <h3>Your Points: <span id="points-display">0</span></h3>
-            </div>
-        </section>
-        <section id="music-section" class="section">
-            <h2>Listen to your favorite music!</h2>
-            <p>The following hyper links send you to different locations to listen to music, in order to enhance your gaming to the next level.</p>
-           
-            <a href="https://soundcloud.com">soundcloud</a>
-            <br>
-            <a href="https://www.pandora.com/">pandora</a> 
-            <br> 
-            <a href="https://open.spotify.com/">spotify</a> 
-            <br>
-            <a href="https://music.youtube.com/">youtube music</a>
-            <br>
-            <a href="https://music.apple.com/us/new">apple music</a>
-            <br>
-            <a href="https://music.amazon.com/">amazon music</a>
-            <br>
-            <a href="https://freemusicarchive.org/">freemusicarchive</a>
-            <br>
-            <a href="https://playlistsound.com">playlistsound</a>
-            <br>
-            <a href="https://www.hoopladigital.com ">hoopladigital</a>
-            <br>
-            <a href="https://nonoki.com">nonoki</a>
-            <br>
-            <a href="https://www.franklinfineartscenter.net ">franklinfineartscenter</a>
-            <br>
-            <a href="https://esound.app">esound</a>
-            <br>
-            <img src="illuminated-gaming-headset-stockcake.webp" alt="YOUR COMPUTER IS BUGGING OUT">
-        </section>
-        <section id="admin-section" class="section">
-            <h2>hello</h2>
+        <section id="message-board">
+            <h2>Messages</h2>
+            <div id="messages"></div>
+            <form id="message-form">
+                <input type="text" id="username" placeholder="Enter your name" required>
+                <textarea id="message" placeholder="Write your message..." required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Gaming Hub. All rights reserved.</p>
+        <p>&copy; 2024 Public Message Board. All rights reserved.</p>
     </footer>
-
-    <!-- Visit Counter -->
-    <div id="visit-counter">Visits: <span id="visit-count">0</span></div>
-
     <script src="script.js"></script>
-         
 </body>
-</html>               
+</html>
