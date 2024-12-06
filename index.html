@@ -8,6 +8,14 @@
        
 </head>
 <body>
+    <div id="cookie-popup" class="popup">
+        <div class="popup-content">
+            <p>We use cookies to enhance your experience. Please accept to continue using the website.</p>
+            <button id="accept-cookies">Accept</button>
+            <button id="decline-cookies">Decline</button>
+        </div>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <div id="particles-js"></div>
 
@@ -82,27 +90,28 @@
         </section>    
         
         <section id="home-section" class="section active">
+            <section
             <h2>Welcome to the Gaming Hub</h2>
             <p>Discover new games, climb the leaderboards, and customize your profile! Please watch the video below.</p>
             <p> Please visit the Forum to get updated daily on <strong>GAMES</strong> and changes. Below is my intro, and Welcome to you. </p>
             <br>
             <button class="game-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-            <br>
-            <img src="GamingImg.jpg" alt="YOUR COMPUTER IS NOT SHOWING IMAGE">
-           
+        </center>
+            <div id="left1">
+            <img id="left1" src="Image 1.jpg" alt="YOUR COMPUTER IS NOT SHOWING IMAGE" width="400" height="300" style="left: 100; top: 50; position: fixed;">
+            </div>
 
         </section>
         <section id="admin-section" class="section">
-            <div class="admin">
-                <h2>Admin Panel</h2>
-                <input type="text" id="admin-code-input" placeholder="Enter admin code" />
-                <button onclick="checkAdminCode()">Submit</button>
-                <div id="email-list" style="display:none;">
-                    <h3>Stored Emails:</h3>
-                    <ul id="emails"></ul>
-                </div>
+            <h2>Admin Panel</h2>
+            <input type="text" id="admin-code-input" placeholder="Enter admin code" />
+            <button onclick="checkAdminCode()">Submit</button>
+            <div id="email-list" style="display:none;">
+                <h3>Stored Emails:</h3>
+                <ul id="emails"></ul>
             </div>
         </section>
+        
         <section id="games-section" class="section">
             <h2>Games</h2>
             <p>Select a game to start playing. Use the search bar to quickly find your favorites!</p>
@@ -116,22 +125,22 @@
                     <br>
                     <br>
                     <center>
-                    <button class="game-button" data-game="Geometry Dash" onclick="window.location.href='https://noohgaminghub.github.io/Game/Geometry Dash v1.5.html';">Geometry Dash</button> 
-                    <button class="game-button" data-game="Slither.io" onclick="window.location.href='https://noohgaminghub.github.io/Game/slither.io v1.13 (#1) (1).html';">Slither.io</button> 
-                    <button class="game-button" data-game="Paper Minecraft" onclick="window.location.href='https://noohgaminghub.github.io/Game/Paper Minecraft .html';">Paper Minecraft</button> 
-                    <button class="game-button" data-game="Tower Defense" onclick="window.location.href='https://noohgaminghub.github.io/Game/TowerDefense2.html';">Tower Defense</button> 
-                    <button class="game-button" data-game="Chess" onclick="window.location.href='https://noohgaminghub.github.io/N/Chess .html';">Chess</button> 
-                    <button class="game-button" data-game="Subway Surfers" onclick="window.location.href='https://noohgaminghub.github.io/Game/Subway Surfers.html';">Subway Surfers</button> 
-                    <button class="game-button" data-game="Mario" onclick="window.location.href='https://noohgaminghub.github.io/Game/Mario.html';">Mario</button> 
-                    <button class="game-button" data-game="Dinosaur" onclick="window.location.href='https://noohgaminghub.github.io/Game/Dinosaur Game.html';">Dinosaur</button> 
-                    <button class="game-button" data-game="Snake" onclick="window.location.href='https://noohgaminghub.github.io/Game/Google Snake.html';">Snake</button> 
-                    <button class="game-button" data-game="Block Blast" onclick="window.location.href='https://noohgaminghub.github.io/Game/Block Blast.html';">Block Blast</button> 
-                    <button class="game-button" data-game="Apple" onclick="window.location.href='https://noohgaminghub.github.io/Game/Appel v1.4.html';">Apple</button> 
-                    <button class="game-button" data-game="Paper.io" onclick="window.location.href='https://noohgaminghub.github.io/Game/Paper.io.html';">Paper.io</button> 
-                    <button class="game-button" data-game="Platformer" onclick="window.location.href='https://noohgaminghub.github.io/Game/Massive Multiplayer Platformer.html';">Massive Multiplayer Platformer</button>
-                    <button class="game-button" data-game="Grab" onclick="window.location.href='https://noohgaminghub.github.io/Game/✋Hamster Grab (1).html';">Hamster Grab</button>
-                    <button class="game-button" data-game="Platformer" onclick="window.location.href='https://noohgaminghub.github.io/Game/WORLDS HARDEST GAME.html';">WORLDS HARDEST HARDEST PLATFORMER IN THE WORLD</button>
-                    <button class="game-button" data-game="Tower" onclick="window.location.href='https://noohgaminghub.github.io/Game/Tower (1).html';">Tower</button>
+                    <button class="game-button" data-game="Geometry Dash" onclick="window.location.href='';">Geometry Dash</button> 
+                    <button class="game-button" data-game="Slither.io" onclick="window.location.href='';">Slither.io</button> 
+                    <button class="game-button" data-game="Paper Minecraft" onclick="window.location.href='';">Paper Minecraft</button> 
+                    <button class="game-button" data-game="Tower Defense" onclick="window.location.href='';">Tower Defense</button> 
+                    <button class="game-button" data-game="Chess" onclick="window.location.href='';">Chess</button> 
+                    <button class="game-button" data-game="Subway Surfers" onclick="window.location.href='';">Subway Surfers</button> 
+                    <button class="game-button" data-game="Mario" onclick="window.location.href='';">Mario</button> 
+                    <button class="game-button" data-game="Dinosaur" onclick="window.location.href='';">Dinosaur</button> 
+                    <button class="game-button" data-game="Snake" onclick="window.location.href='';">Snake</button> 
+                    <button class="game-button" data-game="Block Blast" onclick="window.location.href='';">Block Blast</button> 
+                    <button class="game-button" data-game="Apple" onclick="window.location.href='';">Apple</button> 
+                    <button class="game-button" data-game="Paper.io" onclick="window.location.href='';">Paper.io</button> 
+                    <button class="game-button" data-game="Platformer" onclick="window.location.href='https://noohgoat.github.io/MMP/Massive%20Multiplayer%20Platformer.html';">Massive Multiplayer Platformer</button>
+                    <button class="game-button" data-game="Grab" onclick="window.location.href='https://noohgoat.github.io/Hamster-Grab/%E2%9C%8BHamster%20Grab.html';">Hamster Grab</button>
+                    <button class="game-button" data-game="Platformer" onclick="window.location.href='';">WORLDS HARDEST HARDEST PLATFORMER IN THE WORLD</button>
+                    <button class="game-button" data-game="Tower" onclick="window.location.href='https://noohgoat.github.io/Tower/Tower.html';">Tower</button>
                     
                 </center>
                     
@@ -184,6 +193,8 @@
         <section id="admin-section" class="section">
             <h2>hello</h2>
         </section>
+        
+        
     </main>
     <footer>
         <p>&copy; 2024 Gaming Hub. All rights reserved.</p>
@@ -193,6 +204,8 @@
     <div id="visit-counter">Visits: <span id="visit-count">0</span></div>
 
     <script src="script.js"></script>
-         
+    <script src="server.js"></script>
+    
+        
 </body>
 </html>               
