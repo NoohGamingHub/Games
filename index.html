@@ -51,21 +51,13 @@
 </div>
 
 
-    <div id="signin-modal" class="modal">
-        <div class="modal-content">
-            <h2>Sign In</h2>
-            <p>Please sign in to access the games.</p>
-            <input type="email" id="email-input" placeholder="Enter your email" required />
-            <button onclick="signIn()">Sign In</button>
-        </div>
-    </div>
+    
    <header>
         <h1>Nooh's Gaming Hub</h1>
         <nav>
             <button class="nav-button" onclick="changeSection('home')">Home</button>
             <button class="nav-button" onclick="changeSection('games')">Games</button>
             <button class="nav-button" onclick="changeSection('leaderboard')">Leaderboard</button>
-            <button class="nav-button" onclick="changeSection('admin')">AD</button>
             <button class="nav-button" onclick="window.location.href='https://noohgoat.github.io/Forum/';">Forum</button> 
             <button class="nav-button" onclick="changeSection('achievements')">Achievements</button>
             <button class="" onclick="logout()">Logout</button>
@@ -77,6 +69,7 @@
         <section id="achievements-section" class="section">
             <h2>Your Achievements</h2>
             <ul id="achievements-list">
+                GETTING STARTED: PLAYED YOUR FIRST GAME
                 <!-- Achievements will be dynamically added here -->
             </ul>
         </section>    
@@ -92,17 +85,6 @@
            
 
         </section>
-        <section id="admin-section" class="section">
-            <div class="admin">
-                <h2>Admin Panel</h2>
-                <input type="text" id="admin-code-input" placeholder="Enter admin code" />
-                <button onclick="checkAdminCode()">Submit</button>
-                <div id="email-list" style="display:none;">
-                    <h3>Stored Emails:</h3>
-                    <ul id="emails"></ul>
-                </div>
-            </div>
-        </section>
         <section id="games-section" class="section">
             <h2>Games</h2>
             <p>Select a game to start playing. Use the search bar to quickly find your favorites!</p>
@@ -116,22 +98,81 @@
                     <br>
                     <br>
                     <center>
-                    <button class="game-button" data-game="Geometry Dash" onclick="window.location.href='';">Geometry Dash</button> 
+                    <button class="game-button" data-game="Geometry Dash" onclick="window.location.href='https://noohgaminghub.github.io/Games/Geometry%20Dash%20v1.5.html';">Geometry Dash</button> 
                     <button class="game-button" data-game="Slither.io" onclick="window.location.href='';">Slither.io</button> 
-                    <button class="game-button" data-game="Paper Minecraft" onclick="window.location.href='';">Paper Minecraft</button> 
-                    <button class="game-button" data-game="Tower Defense" onclick="window.location.href='';">Tower Defense</button> 
-                    <button class="game-button" data-game="Chess" onclick="window.location.href='';">Chess</button> 
-                    <button class="game-button" data-game="Subway Surfers" onclick="window.location.href='';">Subway Surfers</button> 
-                    <button class="game-button" data-game="Mario" onclick="window.location.href='';">Mario</button> 
-                    <button class="game-button" data-game="Dinosaur" onclick="window.location.href='';">Dinosaur</button> 
-                    <button class="game-button" data-game="Snake" onclick="window.location.href='';">Snake</button> 
-                    <button class="game-button" data-game="Block Blast" onclick="window.location.href='';">Block Blast</button> 
-                    <button class="game-button" data-game="Apple" onclick="window.location.href='';">Apple</button> 
-                    <button class="game-button" data-game="Paper.io" onclick="window.location.href='';">Paper.io</button> 
-                    <button class="game-button" data-game="Platformer" onclick="window.location.href='https://noohgoat.github.io/MMP/Massive%20Multiplayer%20Platformer.html';">Massive Multiplayer Platformer</button>
-                    <button class="game-button" data-game="Grab" onclick="window.location.href='https://noohgoat.github.io/Hamster-Grab/%E2%9C%8BHamster%20Grab.html';">Hamster Grab</button>
-                    <button class="game-button" data-game="Platformer" onclick="window.location.href='';">WORLDS HARDEST HARDEST PLATFORMER IN THE WORLD</button>
-                    <button class="game-button" data-game="Tower" onclick="window.location.href='https://noohgoat.github.io/Tower/Tower.html';">Tower</button>
+                    <button class="game-button" data-game="Paper Minecraft" onclick="window.location.href='https://noohgaminghub.github.io/Games/Paper%20Minecraft%20.html';">Paper Minecraft</button> 
+                    <button class="game-button" data-game="Tower Defense" onclick="window.location.href='https://noohgaminghub.github.io/Games/TowerDefense2.html';">Tower Defense</button> 
+                    <button class="game-button" data-game="Chess" onclick="window.location.href='https://noohgaminghub.github.io/Games/Chess%20.html';">Chess</button> 
+                    <button class="game-button" data-game="Subway Surfers" onclick="window.location.href='https://noohgaminghub.github.io/Games/Subway%20Surfers.html';">Subway Surfers</button> 
+                    <button class="game-button" data-game="Mario" onclick="window.location.href='https://noohgaminghub.github.io/Games/Mario.html';">Mario</button> 
+                    <button class="game-button" data-game="Dinosaur" onclick="window.location.href='https://noohgaminghub.github.io/Games/Dinosaur%20Game.html';">Dinosaur</button> 
+                    <button class="game-button" data-game="Snake" onclick="window.location.href='https://noohgaminghub.github.io/Games/Google%20Snake.html';">Snake</button> 
+                    <button class="game-button" data-game="Block Blast" onclick="window.location.href='https://noohgaminghub.github.io/Games/Block%20Blast.html';">Block Blast</button> 
+                    <button class="game-button" data-game="Apple" onclick="window.location.href='https://noohgaminghub.github.io/Games/Appel%20v1.4.html';">Apple</button> 
+                    <button class="game-button" data-game="Paper.io" onclick="window.location.href='https://noohgaminghub.github.io/Games/Paper.io.html';">Paper.io</button> 
+                    <button class="game-button" data-game="Platformer" onclick="window.location.href='https://noohgaminghub.github.io/Games/Massive%20Multiplayer%20Platformer.html';">Massive Multiplayer Platformer</button>
+                    <button class="game-button" data-game="Grab" onclick="window.location.href='';">Hamster Grab</button>
+                    <button class="game-button" data-game="Platformer" onclick="window.location.href='https://noohgaminghub.github.io/Games/WORLDS%20HARDEST%20GAME.html';">WORLDS HARDEST HARDEST PLATFORMER IN THE WORLD</button>
+                    <button class="game-button" data-game="Tower" onclick="window.location.href='https://noohgaminghub.github.io/Games/Tower%20(1).html';">Tower</button>
+                    <button class="game-button" data-game="1v1" onclick="window.location.href='https://parshwa282011.github.io/1v1-lol-2/';">1v1.lol</button>
+                    <button class="game-button" data-game="10 minutes untill dawn" onclick="window.location.href='https://parshwa282011.github.io/10minutestilldawn/';">10 minutes till dawn</button>
+                    <button class="game-button" data-game="2048" onclick="window.location.href='https://parshwa282011.github.io/2048/';">2048</button>
+                    <button class="game-button" data-game="fire and water" onclick="window.location.href='https://parshwa282011.github.io/adanceoffireandice/';">A dance of fire and ice</button>
+                    <button class="game-button" data-game="Dark room" onclick="window.location.href='https://parshwa282011.github.io/adarkroom/';">Dark Room</button>
+                    <button class="game-button" data-game="Adrenaline Challenge" onclick="window.location.href='https://parshwa282011.github.io/adrenalinechallenge/';">Adrenaline Challenge</button>
+                    <button class="game-button" data-game="Adventure Drivers" onclick="window.location.href='https://parshwa282011.github.io/adventuredrivers/';">Adventure Drivers</button>
+                    <button class="game-button" data-game="Asteriods" onclick="window.location.href='https://parshwa282011.github.io/asteroids/';">Asteriods</button>
+                    <button class="game-button" data-game="astray" onclick="window.location.href='https://parshwa282011.github.io/astray/';">Astray</button>
+                    <button class="game-button" data-game="Back country" onclick="window.location.href='https://parshwa282011.github.io/backcountry/';">Back country</button>
+                    <button class="game-button" data-game="Bad icecream" onclick="window.location.href='https://parshwa282011.github.io/badicecream/';">Bad Ice Cream</button>
+                    <button class="game-button" data-game="BasketRandom" onclick="window.location.href='https://parshwa282011.github.io/basketrandom/';">Basket Random</button>
+                    <button class="game-button" data-game="Bitlife" onclick="window.location.href='https://parshwa282011.github.io/bitlife/';">Bitlife</button>
+                    <button class="game-button" data-game="Bounce Back" onclick="window.location.href='https://parshwa282011.github.io/bounceback/';">BounceBack</button>
+                    <button class="game-button" data-game="BoxingRandom" onclick="window.location.href='https://parshwa282011.github.io/boxingrandom/';">BoxingRandom</button>
+                    <button class="game-button" data-game="BreakLock" onclick="window.location.href='https://parshwa282011.github.io/breaklock/';">BreakLock</button>
+                    <button class="game-button" data-game="Breakout" onclick="window.location.href='https://parshwa282011.github.io/breakout/';">Breakout</button>
+                    <button class="game-button" data-game="Chess" onclick="window.location.href='https://parshwa282011.github.io/chess/';">Chess</button>
+                    <button class="game-button" data-game="Chrome Dino" onclick="window.location.href='https://parshwa282011.github.io/chromedino/';">ChromeDino</button>
+                    <button class="game-button" data-game="Connect3" onclick="window.location.href='https://parshwa282011.github.io/connect3/';">Connect 3</button>
+                    <button class="game-button" data-game="CookieClicker" onclick="window.location.href='https://parshwa282011.github.io/cookieclicker/';">Cookie Clicker</button>
+                    <button class="game-button" data-game="CubeField" onclick="window.location.href='https://parshwa282011.github.io/cubefield/';">CubeField</button>
+                    <button class="game-button" data-game="DoodleJump" onclick="window.location.href='https://parshwa282011.github.io/doodlejump/';">DoodleJump</button>
+                    <button class="game-button" data-game="DuckLife3" onclick="window.location.href='https://parshwa282011.github.io/ducklife3/';">Ducklife3</button>
+                    <button class="game-button" data-game="DuckLife" onclick="window.location.href='https://parshwa282011.github.io/ducklife/';">DuckLife</button>
+                    <button class="game-button" data-game="DuckLife2" onclick="window.location.href='https://parshwa282011.github.io/ducklife2/';">DuckLife2</button>
+                    <button class="game-button" data-game="DuckLife4" onclick="window.location.href='https://parshwa282011.github.io/ducklife4/';">DuckLife4</button>
+                    <button class="game-button" data-game="EvilGlitch" onclick="window.location.href='https://parshwa282011.github.io/evilglitch/';">EvilGlitch</button>
+                    <button class="game-button" data-game="fireboyandwatergirlintheforesttemple" onclick="window.location.href='https://parshwa282011.github.io/fireboyandwatergirlintheforesttemple/';">fireboyandwatergirlintheforesttemple</button>
+                    <button class="game-button" data-game="FlappyBird" onclick="window.location.href='https://parshwa282011.github.io/flappybird/';">FlappyBIrd</button>
+                    <button class="game-button" data-game="FreindlyFire" onclick="window.location.href='https://parshwa282011.github.io/friendlyfire/';">Freindly Fire</button>
+                    <button class="game-button" data-game="GeometryDASH" onclick="window.location.href='https://parshwa282011.github.io/geometrydash/';">GeometryDash</button>
+                    <button class="game-button" data-game="GetawayShootout" onclick="window.location.href='https://ubg44.github.io/GetawayShootout/';">GetawayShootout</button>
+                    <button class="game-button" data-game="gopherkart" onclick="window.location.href='https://parshwa282011.github.io/gopherkart/';">gopherkart</button>
+                    <button class="game-button" data-game="Hextris" onclick="window.location.href='https://parshwa282011.github.io/hextris/';">Hextris</button>
+                    <button class="game-button" data-game="iceagebabyadventure" onclick="window.location.href='https://parshwa282011.github.io/iceagebabyadventure/';">iceagebabyadventure</button>
+                    <button class="game-button" data-game="umpingfrogspuzzle" onclick="window.location.href='https://parshwa282011.github.io/jumpingfrogspuzzle/';">umpingfrogspuzzle</button>
+                    <button class="game-button" data-game="Konnekt" onclick="window.location.href='https://parshwa282011.github.io/konnekt/';">konnekt</button>
+                    <button class="game-button" data-game="Minecraft" onclick="window.location.href='https://parshwa282011.github.io/minecraft0.30/';">Minecraft</button>
+                    <button class="game-button" data-game="Minecraft" onclick="window.location.href='https://parshwa282011.github.io/minecraft1.3/';">Minecraft2</button>
+                    <button class="game-button" data-game="MotorCycleRacin" onclick="window.location.href='https://parshwa282011.github.io/motox3m2/';">Motorcycle Racing</button>
+                    <button class="game-button" data-game="ovo" onclick="window.location.href='https://parshwa282011.github.io/ovo/';">OVO</button>
+                    <button class="game-button" data-game="Pac-man" onclick="window.location.href='https://parshwa282011.github.io/pacman/';">pac-man</button>
+                     <button class="game-button" data-game="PushBACK" onclick="window.location.href='https://parshwa282011.github.io/pushback/';">PushBack</button>
+                    <button class="game-button" data-game="Racing" onclick="window.location.href='https://parshwa282011.github.io/racer/';">racing</button>
+                    <button class="game-button" data-game="RadiusRaid" onclick="window.location.href='https://parshwa282011.github.io/radiusraid/';">RadiusRaid</button>
+                    <button class="game-button" data-game="RetroBowl" onclick="window.location.href='https://parshwa282011.github.io/retrobowl/';">RetroBowl</button>
+                     <button class="game-button" data-game="RetroHaunt" onclick="window.location.href='https://parshwa282011.github.io/retrohaunt/';">RetroHaunt</button>
+                    <button class="game-button" data-game="RoadBLOCKS" onclick="window.location.href='https://parshwa282011.github.io/roadblocks/';">RoadBLocks</button>
+                    <button class="game-button" data-game="Slope" onclick="window.location.href='https://parshwa282011.github.io/slope/';">Slope</button>
+                    <button class="game-button" data-game="SnowRIDER" onclick="window.location.href='https://parshwa282011.github.io/snowrider3d/';">SnowRIDER3d</button>
+                     <button class="game-button" data-game="SoccerRANDOM" onclick="window.location.href='https://parshwa282011.github.io/soccerrandom/';">SoccerRandom</button>
+                    <button class="game-button" data-game="SpaceCOMPANY" onclick="window.location.href='https://parshwa282011.github.io/spacecompany/';">SpaceCOMPANY</button>
+                    <button class="game-button" data-game="Space Invaders" onclick="window.location.href='https://parshwa282011.github.io/spaceinvaders/';">Space Invaders</button>
+                    <button class="game-button" data-game="Space Invaders" onclick="window.location.href='https://parshwa282011.github.io/spaceinvaders/';">Space Invaders</button>
+                     <button class="game-button" data-game="Tetris" onclick="window.location.href='https://parshwa282011.github.io/tetris/';">Tetris</button>
+                    <button class="game-button" data-game="thechromainincedent" onclick="window.location.href='https://parshwa282011.github.io/thechromaincident/';">The Chromain INCIDENT</button>
+                    <button class="game-button" data-game="TunnelRush" onclick="window.location.href='https://parshwa282011.github.io/tunnelrush/';">TunnelRush</button>
+                   
                     
                 </center>
                     
